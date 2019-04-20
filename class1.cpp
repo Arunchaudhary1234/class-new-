@@ -1,11 +1,12 @@
+
 #include<iostream>
 #include<string>
 using namespace std;
 class student
 {
+public:
     string name;
     int roll_no,marks;
-public:
     void enterdetails();
     void viewdetails();
 };
@@ -22,11 +23,22 @@ void student :: viewdetails()
     cout<<"Name of the student is  : "<<name;
     cout<<endl<<"Roll number of the student is : "<<roll_no;
 }
-
+class prajjwal: public student
+{
+public:
+    void ppclass();
+};
+void prajjwal:: ppclass()
+{
+    cout<<endl<<"The class has name :  " <<name;
+    cout<<endl<<"The class has roll no : "<<roll_no;
+}
 int main()
 {
-    student s1; //creating object of the class student
-    s1.enterdetails();
-    s1.viewdetails();
+    prajjwal p1;
+    p1.enterdetails();
+    p1.viewdetails();
+    p1.ppclass();
     return 0;
+
 }
