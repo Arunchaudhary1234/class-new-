@@ -21,7 +21,7 @@ constructor :: constructor(int x,int y)
 int main()
 {
     constructor c1; // non-parameterised construtor is called
-    cout<<"\nI,ve taken break here"<<endl;
+    cout<<"\nI,ve  taken break here"<<endl;
     constructor c2(20,30); // parameterised construtor is called
     return 0;
 }
